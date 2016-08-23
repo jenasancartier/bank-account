@@ -1,6 +1,4 @@
 //business logic:
-var currentBalanceArray = [];
-
 function BankAccount(name, balance) {
   this.name = name;
   this.balance = balance;
