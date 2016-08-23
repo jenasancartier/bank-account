@@ -24,6 +24,7 @@ $(document).ready(function(){
     var newBankAccount = new BankAccount(inputtedName, inputtedAmount);
     console.log(newBankAccount);
     $("form#banking").show();
+    $(".output").show();
     $("#currentBalance").text(newBankAccount.balance);
 
   $("form#banking").submit(function(event){
