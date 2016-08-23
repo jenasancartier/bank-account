@@ -33,8 +33,8 @@ $(document).ready(function(){
     newBankAccount.withdraw(withdrawAmount);
     newBankAccount.deposit(depositAmount);
     console.log(newBankAccount.balance);
-    $("currentBalance").empty("");
-    $("currentBalance").text(newBankAccount.balance);
+
+    $("#currentBalance").text(newBankAccount.balance);
     });
   });
 })
