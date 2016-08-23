@@ -18,26 +18,30 @@
           <form id="new-account">
             <div class="form-group">
               <label for="register-name">Name:</label>
-              <input type="text" class="form-control register-name">
+              <input type="text" class="form-control" id="register-name">
             </div>
             <div class="form-group">
               <label for="initial-deposit">Initial Deposit</label>
-              <input type="number" class="form-control initial-deposit">
+              <input type="number" class="form-control" id="initial-deposit">
             </div>
+            <button type="submit" class="btn btn-primary" id="initialSubmit">Add Account</button>
           </form>
         </div>
 
           <div class="col-md-6">
             <h2>Deposit or withdraw funds:</h2>
             <form id="banking">
-              <div class="form-group">
-                <label for="deposit-amount">Deposit Amount:</label>
-                <input type="number" class="form-control deposit-amount">
+              <div class="banking">
+                <div class="form-group">
+                  <label for="deposit-amount">Deposit Amount:</label>
+                  <input type="number" class="form-control" id="deposit-amount">
+                </div>
+                <div class="form-group">
+                  <label for="withdraw-amount">Withdraw Amount:</label>
+                  <input type="number" class="form-control" id="withdraw-amount">
+                </div>
               </div>
-              <div class="form-group">
-                <label for="withdrawal-amount">Withdrawal Amount:</label>
-                <input type="number" class="form-control withdrawal-amount">
-              </div>
+              <button type="submit" class="btn btn-success" id="updateSubmit">Update your account</button>
             </form>
           </div>
         </div>
